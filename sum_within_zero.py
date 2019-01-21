@@ -8,7 +8,7 @@ for i in range(n):
             print(lis[i]+lis[j])
             c+=1
         else:
-            if(lis[i]+lis[j] < miner):
+            if(lis[i]+lis[j] < miner and (lis[i]+lis[j] <=1 or lis[i]+lis[j]>=-1)):
                 miner = lis[i]+lis[j]
                 a = lis[i] 
                 b = lis[j]
