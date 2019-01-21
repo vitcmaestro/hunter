@@ -13,7 +13,7 @@ for i in range(len(s)):
 for i in range(len(s)):
     temp = pop()
     if(temp != s[i]):
-        print("no")
+        print("NO")
         break
 else:
-    print("yes")
+    print("YES")
