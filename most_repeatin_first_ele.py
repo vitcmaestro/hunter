@@ -12,4 +12,7 @@ lis = list(map(int,input().split()))
 maxer = 0
 for i in lis:
     maxer,ans = frequency(i)
-print(ans)
+if(maxer <= 1):
+    print("unique")
+else:
+    print(ans)
