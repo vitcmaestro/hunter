@@ -7,8 +7,8 @@ for i in range(n):
 for j in range(k):
     c=0
     for i in range(1,n):
-        for k in range(k):
-            if(lis[0][j] == lis[i][k]):
+        for l in range(k):
+            if(lis[0][j] == lis[i][l]):
                 c+=1
     if(c == n-1):
         ans.append(lis[0][j])
