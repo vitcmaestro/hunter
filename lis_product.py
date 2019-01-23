@@ -6,7 +6,7 @@ for i in range(n):
     for j in range(n):
         if(i != j):
             x = x * a[j]
-    if(i+1 =n):
+    if(i+1 ==n):
         print(x,end = "")
     else:
         print(x, end =" ")
