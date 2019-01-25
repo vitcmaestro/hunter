@@ -6,7 +6,7 @@ for i in range(m):
 sti = 0
 stj = 0
 gift = [a[0][0]]
-while(sti<(m-1) or sti<(n-1)):
+while(sti<(m-1) and sti<(n-1)):
     if(a[sti+1][stj] > a[sti][stj+1]):
         gift.append(a[sti+1][stj])
         sti+=1
@@ -17,14 +17,15 @@ while(sti<(m-1) or sti<(n-1)):
         gift.append(a[sti+1][stj+1])
         sti+=1
         stj+=1
-    if(sti == (m-1) and stj !=(n-1) and m!=n):
-        for x in range(stj,n):
-            gift.append(a[sti][x])
-        stj = n
-    elif(stj == (n-1) and sti!=(m-1) and m!=n):
-        for x in range(sti,m):
-            gift.append(a[x][stj])
-        sti = m
+if(sti == (m-1) and stj !=(n-1)):
+    for x in range(stj+1,n):
+        gift.append(a[sti][x])
+    stj = n
+elif(stj == (n-1) and sti!=(m-1)):
+    for x in range(sti+1,m):
+       gift.append(a[x][stj])
+    sti = m
+
 ans = 0
 for i in gift:
     ans = ans+i
