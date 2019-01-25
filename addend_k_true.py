@@ -1,12 +1,11 @@
 n,k = map(int,input().split())
 a = list(map(int,input().split()))
-j=0
+m=0
 for i in range(n):
-    for j in range(i+1,n):
+    for j in range(n):
         if(a[i]+a[j] == k):
-            print(a[i][j])
-            j= 1
-if(j == 1):
+            m = 1
+if(m == 1):
     print("YES")
 else:
     print("NO")
