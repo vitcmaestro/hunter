@@ -17,11 +17,11 @@ while(sti<(m-1) or sti<(n-1)):
         gift.append(a[sti+1][stj+1])
         sti+=1
         stj+=1
-    if(sti == (m-1) and stj !=(n-1)):
+    if(sti == (m-1) and stj !=(n-1) and m!=n):
         for x in range(stj,n):
             gift.append(a[sti][x])
         stj = n
-    elif(stj == (n-1) and sti!=(m-1)):
+    elif(stj == (n-1) and sti!=(m-1) and m!=n):
         for x in range(sti,m):
             gift.append(a[x][stj])
         sti = m
