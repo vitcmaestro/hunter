@@ -7,4 +7,11 @@ for j in range(1,n):
         summer =summer + a[i]
     if(summer > maxer):
         maxer = summer
-print(maxer)
+maxer1 = a[n-1]
+for j in range(n-1,-1,-1):
+    summer1 = a[-1]
+    for i in range(n-2,j,-1):
+        summer1 =summer1 + a[i]
+    if(summer1 > maxer1):
+        maxer1 = summer1
+print(max(maxer,maxer1))
