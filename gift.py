@@ -7,7 +7,6 @@ sti = 0
 stj = 0
 gift = [a[0][0]]
 while(sti<(m-1) or sti<(n-1)):
-    print(sti,stj)
     if(a[sti+1][stj] > a[sti][stj+1]):
         gift.append(a[sti+1][stj])
         sti+=1
