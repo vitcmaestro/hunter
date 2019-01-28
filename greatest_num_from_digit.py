@@ -10,7 +10,7 @@ for i in range(len(n)):
         if(int(x) not in ress):
             ress.append(int(x))
 ress.sort()
-for i in res:
+for i in ress:
     if(i>s):
         print(i)
         break
