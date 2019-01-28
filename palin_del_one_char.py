@@ -6,7 +6,7 @@ for i in s1:
     lis[x]+=1
 c = 0
 for i in lis:
-    if(lis[i]%2 !=0):
+    if(i%2 !=0):
         c = c+1
 if(c == 1 or c== 0):
     print("YES")
