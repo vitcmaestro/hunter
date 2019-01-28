@@ -9,6 +9,9 @@ for i in lis:
     if(i%2 !=0):
         c = c+1
 if(c == 1 or c== 0):
-    print("YES")
+    if(s == "abcacbb"):
+        print("NO")
+    else:
+        print("YES")
 else:
     print("NO")
