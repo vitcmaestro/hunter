@@ -9,5 +9,5 @@ def parens(left, right, string):
     parens(left, right-1, string+"}")
 n = int(input())
 parens(n, 0, "")
-for i arr:
+for i in arr:
    print(i)
