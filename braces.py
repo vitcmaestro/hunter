@@ -7,6 +7,7 @@ def parens(left, right, string):
    parens(left-1, right+1, string+"{")
   if right > 0: 
     parens(left, right-1, string+"}")
-parens(3, 0, "")
+n = int(input())
+parens(n, 0, "")
 for i arr:
    print(i)
